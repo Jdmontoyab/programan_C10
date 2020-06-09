@@ -1,0 +1,84 @@
+.container {
+    background: $bg;
+    width: 90%;
+    max-width: 1022px;
+    margin: auto;
+    border: 1px solid #000;
+
+    display: flex;
+    flex-flow: row wrap;
+}
+
+nav {
+    flex: 1 1 15%;
+    border: 2px solid $colorTwo;
+    border-radius: 10px;
+
+    ul {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+        justify-content: space-around;
+
+        a {
+            color: $colorThree;
+            text-decoration: none;
+            text-align: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 10px;
+            font-size: 8px;
+
+            &:hover {
+                background: $colorThree;
+                color: $bg;
+                border-radius: 5px;
+            }             
+        }
+    }
+}
+
+.main {
+    padding: 20px;
+    flex: 1 1 65%;
+    border: 2px solid $colorTwo;
+    border-radius: 10px;
+
+    article {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+
+        img {
+            width: 150px;
+            height: 150px;
+            //padding: 10px;
+            margin-right: 10px;
+            border: 3px solid $colorTwo;
+            border-radius: 20px;
+        }
+
+        h2 {
+            color: $colorThree;
+            font-size: 12px;
+        }
+
+        p {
+            font-size: 8px;
+            text-align: justify;
+            color: $colorThree;
+        }
+    }
+}
+
+aside {
+        background-image: url(../images/aside.jpg);
+        background-size: cover;
+        flex: 1 1 20%;
+        padding: 5px;
+        border: 2px solid $colorTwo;
+        border-radius: 10px;
+    }

@@ -1,0 +1,52 @@
+@media screen and (max-width: 320px) {
+    .container {
+        width: 100%;
+        //border: 2px solid yellow;
+
+        flex-direction: column;
+
+        header {
+            width: 100%;
+        }
+    
+        nav {
+            display: none;
+        }
+
+        .main {
+
+            article {
+                width: 100%;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: center;
+
+                h2 {
+                    margin-top: 5px;
+                    text-align: center;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        aside {
+            display: none;
+            height: 20px;
+        }
+
+        footer {
+
+            ul {
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+footer {
+    width: 100%;
+    padding: 20px;
+    background-image: url(../images/footer.jpg);
+    background-size: cover;
+    background-position: center center;
+    font-size: 16px;
+    border: 2px solid $colorTwo;
+    border-radius: 10px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    ul {
+
+        a {
+            background: $bg;
+            text-decoration: none;
+            color: $colorThree;
+            border-radius: 5px;
+            padding: 5px;
+            font-size: 8px;
+
+            &:hover {
+                background: $colorThree;
+                color: $bg;
+                border-radius: 5px;
+            }  
+        }   
+    }
+}
